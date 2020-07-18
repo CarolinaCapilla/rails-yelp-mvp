@@ -17,16 +17,9 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.new
   end
 
-  def edit
-  end
-
   def show
-  end
-
-  def update
-  end
-
-  def destroy
+    @restaurant = Restaurant.find(params[:id])
+    @review = Review.new
   end
 
   private
